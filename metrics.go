@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/niean/go-metrics-lite"
-	"github.com/niean/goperfcounter/base"
+	"github.com/qlans/goperfcounter/base"
 )
 
 var (

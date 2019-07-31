@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"path/filepath"
 	"strings"
 	"sync"
 )
@@ -48,11 +49,21 @@ func config() *GlobalConfig {
 	return cfg
 }
 
+func LoadConfig() error {
+	return loadConfig()
+}
+
 func loadConfig() error {
 	if !isFileExist(configFn) {
-		return fmt.Errorf("config file not found: %s", configFn)
+		execPath, err := filepath.Abs(filepath.Dir(os.Args[0]))
+		if err != nil {
+			return fmt.Errorf("get exec path err: %s", err.Error())
+		}
+		configFn = filepath.Join(execPath, "perfcounter.json")
+		if !isFileExist(configFn) {
+			return fmt.Errorf("config file not found: %s", configFn)
+		}
 	}
-
 	c, err := parseConfig(configFn)
 	if err != nil {
 		return err

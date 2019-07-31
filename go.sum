@@ -1,0 +1,6 @@
+github.com/niean/go-metrics-lite v0.0.0-20151230091537-b5d30971b578 h1:bHDlu3H/z3ITiCCLjAro7dSZTlKy62ZbWHEN5JT7z9M=
+github.com/niean/go-metrics-lite v0.0.0-20151230091537-b5d30971b578/go.mod h1:F5oJZruubjYvF/hsrhP/QtVabIKrth79mug76XbqqGU=
+github.com/niean/gotools v0.0.0-20151221085310-ff3f51fc5c60 h1:8kcIWCY09RdXZcXUKOWtvjvKTr5Lziq4R/6saxUOhvQ=
+github.com/niean/gotools v0.0.0-20151221085310-ff3f51fc5c60/go.mod h1:gH2bvE9/eX49hWK7CwwL/+/y+dodduyxs5cTpBzF5v0=
+github.com/qlans/goperfcounter v0.0.0-20160108100052-24860a8d3fac h1:CFwLhPlUCHYJVOd0Da3xY4MI+dgntxKosUtTrlLIb3E=
+github.com/qlans/goperfcounter v0.0.0-20160108100052-24860a8d3fac/go.mod h1:Ojkial3HayzYtInZeq72pLwGaMXRbKxWz59+gcNjvyI=
